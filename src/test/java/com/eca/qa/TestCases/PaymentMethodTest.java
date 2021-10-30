@@ -24,39 +24,26 @@ public class PaymentMethodTest extends TestBase
 		loginPage = new LoginPage();
 		addToCartPage = new AddToCartPage();
 	}
-	
-//	@Test(priority=1, enabled=true)
-//	public void loginPageTitleTest()
-//	{
-//		String title = loginPage.validateLoginPageTitle();
-//		Assert.assertEquals(title, Constants.LOGIN_PAGE_TITLE, "Login Page Title is not Matched");
-//		Log.info("Login Page Title Verified");
-//	}
-	
-//	@Test(priority=2, enabled=true)
-//	public void crmLogoImageTest()
-//	{
-//		boolean flag = loginPage.validateCRMImage();
-//		Assert.assertTrue(flag);
-//		Log.info("CRM Logo Verified");
-//	}
-	
+
 	@Test(priority=1, enabled=true, invocationCount=1)
 	public void BankWirePaymentOptionTest()
 	{
 		loginPage.login(property.getProperty("Username"),property.getProperty("Password"));
 		Log.info("Successfully Logged into E-Commerce Application");
 		addToCartPage.VerifyAddOneItemToCart();
+		Log.info("Successfully verified add one item to cart");
 		addToCartPage.VerifyBankWirePaymentOption();
+		Log.info("Successfully verified Bank wire payment option");
 	}
 
-	@Test(priority=1, enabled=true, invocationCount=1)
+	@Test(priority=2, enabled=true, invocationCount=1)
 	public void CheckPaymentOptionTest()
 	{
 		loginPage.login(property.getProperty("Username"),property.getProperty("Password"));
 		Log.info("Successfully Logged into E-Commerce Application");
 		addToCartPage.VerifyAddOneItemToCart();
+		Log.info("Successfully verified add many item to cart");
 		addToCartPage.VerifyCheckPaymentOption();
+		Log.info("Successfully verified check payment option");
 	}
-
 }

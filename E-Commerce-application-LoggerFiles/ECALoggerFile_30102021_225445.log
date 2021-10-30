@@ -1,0 +1,40 @@
+2021-10-30 22:55:15,557  INFO [main] WebEventListener:23 - Application Launched Successfully
+2021-10-30 22:55:19,536  INFO [main] AddToCartPage:36 - Sign In button Clicked
+2021-10-30 22:55:19,948  INFO [main] AddToCartPage:40 - User Name filled
+2021-10-30 22:55:20,174  INFO [main] AddToCartPage:42 - Password filled
+2021-10-30 22:55:23,388  INFO [main] AddToCartPage:46 - Submit Button Clicked
+2021-10-30 22:55:23,388  INFO [main] HomePage:32 - Successfully Logged into E-Commerce Application
+2021-10-30 22:55:27,968  INFO [main] HomePage:82 - Home Button clicked and navigated to Home page
+2021-10-30 22:55:28,183  INFO [main] HomePage:86 - Hovered a card displayed
+2021-10-30 22:55:33,536  INFO [main] HomePage:91 - add to cart button clicked
+2021-10-30 22:55:36,670  INFO [main] HomePage:94 - Clicked on Cart Dropdown Button
+2021-10-30 22:55:36,735  INFO [main] HomePage:34 - Successfully verified add one item to cart
+2021-10-30 22:55:39,469  INFO [main] HomePage:155 - Clicked on Summary proceed Button
+2021-10-30 22:55:43,322  INFO [main] HomePage:157 - Clicked on Address proceed Button
+2021-10-30 22:55:43,498  INFO [main] HomePage:159 - Clicked on Terms check Box
+2021-10-30 22:55:46,851  INFO [main] HomePage:161 - Clicked on Shipping proceed Button
+2021-10-30 22:55:49,030  INFO [main] HomePage:163 - Selected Bank wire payment option
+2021-10-30 22:55:55,327  INFO [main] HomePage:165 - Clicked on confirm order Button
+2021-10-30 22:55:55,368  INFO [main] HomePage:36 - Successfully verified Bank wire payment option
+2021-10-30 22:55:56,102  INFO [main] HomePage:86 - Browser Terminated
+2021-10-30 22:55:56,102  INFO [main] HomePage:87 - -----------------------------------------------
+2021-10-30 22:56:18,783  INFO [main] WebEventListener:23 - Application Launched Successfully
+2021-10-30 22:56:22,971  INFO [main] AddToCartPage:36 - Sign In button Clicked
+2021-10-30 22:56:23,347  INFO [main] AddToCartPage:40 - User Name filled
+2021-10-30 22:56:23,607  INFO [main] AddToCartPage:42 - Password filled
+2021-10-30 22:56:26,082  INFO [main] AddToCartPage:46 - Submit Button Clicked
+2021-10-30 22:56:26,084  INFO [main] HomePage:43 - Successfully Logged into E-Commerce Application
+2021-10-30 22:56:30,545  INFO [main] HomePage:82 - Home Button clicked and navigated to Home page
+2021-10-30 22:56:30,766  INFO [main] HomePage:86 - Hovered a card displayed
+2021-10-30 22:56:34,921  INFO [main] HomePage:91 - add to cart button clicked
+2021-10-30 22:56:39,921  INFO [main] HomePage:94 - Clicked on Cart Dropdown Button
+2021-10-30 22:56:39,959  INFO [main] HomePage:45 - Successfully verified add many item to cart
+2021-10-30 22:56:42,991  INFO [main] HomePage:177 - Clicked on Summary proceed Button
+2021-10-30 22:56:51,238  INFO [main] HomePage:179 - Clicked on Address proceed Button
+2021-10-30 22:56:51,379  INFO [main] HomePage:181 - Clicked on Terms check Box
+2021-10-30 22:56:54,392  INFO [main] HomePage:183 - Clicked on Shipping proceed Button
+2021-10-30 22:56:56,478  INFO [main] HomePage:185 - Selected Check payment option
+2021-10-30 22:57:00,828  INFO [main] HomePage:187 - Clicked on confirm order Button
+2021-10-30 22:57:00,866  INFO [main] HomePage:47 - Successfully verified check payment option
+2021-10-30 22:57:01,585  INFO [main] HomePage:86 - Browser Terminated
+2021-10-30 22:57:01,585  INFO [main] HomePage:87 - -----------------------------------------------

@@ -10,17 +10,9 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.concurrent.TimeUnit;
 
 public class AddToCartPage extends TestBase {
-	@FindBy(xpath = "//*[@id=\"block_top_menu\"]/ul")
-	WebElement mainMenu;
 
 	@FindBy(xpath = "//*[@id=\"columns\"]/div[1]/a/i")
 	WebElement HomeButton;
-
-//	@FindBy(xpath="//*[@id=\"center_column\"]/ul/li[2]/div/div[2]/div[2]/a[1]")
-//	WebElement card_01;
-//
-//	@FindBy(xpath="//*[@id=\"layer_cart\"]/div[1]/div[2]/div[4]/a/span")
-//	WebElement proceedToCheckOutBtn;
 
 	@FindBy(xpath = "//*[@id=\"homefeatured\"]/li[2]/div/div[1]/div/a[1]/img")
 	WebElement shoppingCardImg1;
@@ -33,14 +25,6 @@ public class AddToCartPage extends TestBase {
 
 	@FindBy(xpath = "//*[@id=\"product_2_7_0_588254\"]/td[1]/a/img")
 	WebElement cartProductImg;
-
-
-//	@FindBy(xpath="//*[@id=\"homefeatured\"]/li[2]/div/div[1]/div/a[2]")
-//	WebElement shoppingCardMoreBtn;
-
-//	@FindBy(xpath="//*[@id=\"index\"]")
-//	WebElement quantityTextBox;
-
 
 	@FindBy(xpath = "//*[@id=\"homefeatured\"]/li[2]/div/div[2]/div[2]/a[1]")
 	WebElement addToCartBtn1;
@@ -63,20 +47,9 @@ public class AddToCartPage extends TestBase {
 	@FindBy(xpath = "//*[@id=\"columns\"]/div[1]")
 	WebElement orderConfirmElement;
 
-
-
-
-
-
-	@FindBy(xpath = "//*[@id=\"layer_cart\"]/div[1]/div[2]/div[4]/a")
-	WebElement checkoutBtn;
-
-
 	@FindBy(xpath = "//*[@id=\"header\"]/div[3]/div/div/div[3]/div/a")
 	WebElement cartDropDownBtn;
 
-	@FindBy(xpath = "//*[@id=\"button_order_cart\"]")
-	WebElement cartCheckoutBtn;
 	//Payment
 	@FindBy(xpath = "//*[@id=\"center_column\"]/p[2]/a[1]")
 	WebElement SummaryProceedCheckoutBtn;
@@ -99,47 +72,26 @@ public class AddToCartPage extends TestBase {
 	@FindBy(xpath = "//*[@id=\"cart_navigation\"]/button")
 	WebElement confirmOrderBtn;
 
-
-
-
 	public AddToCartPage() {
 		PageFactory.initElements(driver, this);
 	}
 
-//	public String validateLoginPageTitle()
-//	{
-//		return driver.getTitle();
-//	}
-
-//	public boolean validateCRMImage()
-//	{
-//		return crmLogo.isDisplayed();
-//	}
-
-//	public HomePage login(String uname, String pword)
-//	{
-//		signInButton.click();
-//		username.sendKeys(uname);
-//		password.sendKeys(pword);
-//
-//		JavascriptExecutor js = (JavascriptExecutor)driver;
-//		js.executeScript("arguments[0].click();", submitLoginButton);
-//
-//		return new HomePage();
-//	}
-
 	public void VerifyAddOneItemToCart() {
 
 		HomeButton.click();
+		Log.info("Home Button clicked and navigated to Home page");
 
 		Actions builder = new Actions(driver);
 		builder.moveToElement(shoppingCardImg1).build().perform();
+		Log.info("Hovered a card displayed");
 
 		addToCartBtn1.click();
 		driver.navigate().refresh();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		Log.info("add to cart button clicked");
 
 		cartDropDownBtn.click();
+		Log.info("Clicked on Cart Dropdown Button");
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView();", Element);
 	}
@@ -147,27 +99,37 @@ public class AddToCartPage extends TestBase {
 	public void VerifyAddManyItemToCart() {
 
 		HomeButton.click();
+		Log.info("Home Button clicked and navigated to Home page");
 
 //		Add first item to cart
 		Actions builder = new Actions(driver);
 		builder.moveToElement(shoppingCardImg1).build().perform();
+		Log.info("Hovered a card displayed in Home page");
+
 		addToCartBtn1.click();
+		Log.info("add to cart button clicked first item added to cart");
 		driver.navigate().refresh();
+
 
 //		Add second item to cart
 		Actions builder2 = new Actions(driver);
 		builder2.moveToElement(shoppingCardImg2).build().perform();
+		Log.info("Hovered a card displayed in Home page");
 		addToCartBtn2.click();
+		Log.info("add to cart button clicked second item added to cart");
 		driver.navigate().refresh();
 
 //		Add third item to cart
 		Actions builder3 = new Actions(driver);
 		builder3.moveToElement(shoppingCardImg3).build().perform();
+		Log.info("Hovered a card displayed in Home page");
 		addToCartBtn3.click();
+		Log.info("add to cart button clicked third item added to cart");
 		driver.navigate().refresh();
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		cartDropDownBtn.click();
+		Log.info("Clicked on Cart Dropdown Button");
 
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView();", Element);
@@ -178,7 +140,9 @@ public class AddToCartPage extends TestBase {
 
 		Actions builder = new Actions(driver);
 		builder.moveToElement(cartProductImg).build().perform();
+		Log.info("Hovered a card displayed in Cart list");
 		productCartDeleteIcon.click();
+		Log.info("Clicked on Delete item Button");
 
 	}
 
@@ -188,11 +152,17 @@ public class AddToCartPage extends TestBase {
 		js.executeScript("arguments[0].scrollIntoView();", totalElement);
 
 		SummaryProceedCheckoutBtn.click();
+		Log.info("Clicked on Summary proceed Button");
 		addressProceedCheckoutBtn.click();
+		Log.info("Clicked on Address proceed Button");
 		TermsCheckbox.click();
+		Log.info("Clicked on Terms check Box");
 		shippingProceedCheckoutBtn.click();
+		Log.info("Clicked on Shipping proceed Button");
 		BankWirePaymentOptionBtn.click();
+		Log.info("Selected Bank wire payment option");
 		confirmOrderBtn.click();
+		Log.info("Clicked on confirm order Button");
 
 		JavascriptExecutor js1 = (JavascriptExecutor) driver;
 		js1.executeScript("arguments[0].scrollIntoView();", orderConfirmElement);
@@ -204,11 +174,17 @@ public class AddToCartPage extends TestBase {
 		js.executeScript("arguments[0].scrollIntoView();", totalElement);
 
 		SummaryProceedCheckoutBtn.click();
+		Log.info("Clicked on Summary proceed Button");
 		addressProceedCheckoutBtn.click();
+		Log.info("Clicked on Address proceed Button");
 		TermsCheckbox.click();
+		Log.info("Clicked on Terms check Box");
 		shippingProceedCheckoutBtn.click();
+		Log.info("Clicked on Shipping proceed Button");
 		checkPaymentOptionBtn.click();
+		Log.info("Selected Check payment option");
 		confirmOrderBtn.click();
+		Log.info("Clicked on confirm order Button");
 
 		JavascriptExecutor js1 = (JavascriptExecutor) driver;
 		js1.executeScript("arguments[0].scrollIntoView();", orderConfirmElement);

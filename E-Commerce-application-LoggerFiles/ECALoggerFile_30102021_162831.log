@@ -1,0 +1,13 @@
+2021-10-30 16:29:03,553  INFO [main] WebEventListener:21 - -----------------------------------------------
+2021-10-30 16:29:03,558  INFO [main] WebEventListener:22 - Application Launched Successfully
+2021-10-30 16:29:07,695  INFO [main] ContactsPage:37 - Contact Us Button Clicked
+2021-10-30 16:29:08,090  INFO [main] ContactsPage:40 - Selected subject Heading : Customer service
+2021-10-30 16:29:08,456  INFO [main] ContactsPage:43 - Email address is filled
+2021-10-30 16:29:08,806  INFO [main] ContactsPage:46 - Order Reference is filled
+2021-10-30 16:29:09,084  INFO [main] ContactsPage:49 - Message area is filled
+2021-10-30 16:29:12,231  INFO [main] ContactsPage:52 - Message send button is clicked
+2021-10-30 16:29:12,233  INFO [main] ContactsPage:30 - Your message has been successfully sent to our team.
+2021-10-30 16:29:12,234  INFO [main] ContactsPage:31 - Successfully Contacted to E-Commerce Application
+2021-10-30 16:29:12,234  INFO [main] ContactsPage:32 - Test Passed
+2021-10-30 16:29:13,106  INFO [main] ContactsPage:86 - Browser Terminated
+2021-10-30 16:29:13,111  INFO [main] ContactsPage:87 - -----------------------------------------------

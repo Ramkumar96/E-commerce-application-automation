@@ -1,0 +1,21 @@
+2021-10-30 22:51:07,226  INFO [main] WebEventListener:23 - Application Launched Successfully
+2021-10-30 22:51:11,820  INFO [main] AddToCartPage:36 - Sign In button Clicked
+2021-10-30 22:51:12,244  INFO [main] AddToCartPage:40 - User Name filled
+2021-10-30 22:51:12,543  INFO [main] AddToCartPage:42 - Password filled
+2021-10-30 22:51:15,318  INFO [main] AddToCartPage:46 - Submit Button Clicked
+2021-10-30 22:51:15,318  INFO [main] HomePage:33 - Successfully Logged into E-Commerce Application
+2021-10-30 22:51:23,646  INFO [main] HomePage:102 - Home Button clicked and navigated to Home page
+2021-10-30 22:51:23,844  INFO [main] HomePage:107 - Hovered a card displayed in Home page
+2021-10-30 22:51:24,068  INFO [main] HomePage:110 - add to cart button clicked first item added to cart
+2021-10-30 22:51:33,289  INFO [main] HomePage:117 - Hovered a card displayed in Home page
+2021-10-30 22:51:33,445  INFO [main] HomePage:119 - add to cart button clicked second item added to cart
+2021-10-30 22:51:51,895  INFO [main] HomePage:125 - Hovered a card displayed in Home page
+2021-10-30 22:51:52,029  INFO [main] HomePage:127 - add to cart button clicked third item added to cart
+2021-10-30 22:52:06,826  INFO [main] HomePage:132 - Clicked on Cart Dropdown Button
+2021-10-30 22:52:06,867  INFO [main] HomePage:35 - Successfully added many items to the cart
+2021-10-30 22:52:07,040  INFO [main] HomePage:143 - Hovered a card displayed in Cart list
+2021-10-30 22:52:07,292  INFO [main] HomePage:145 - Clicked on Delete item Button
+2021-10-30 22:52:07,292  INFO [main] HomePage:37 - Successfully one item removed from the cart
+2021-10-30 22:52:07,293  INFO [main] HomePage:38 - End of removeOneItemTest
+2021-10-30 22:52:08,091  INFO [main] HomePage:86 - Browser Terminated
+2021-10-30 22:52:08,096  INFO [main] HomePage:87 - -----------------------------------------------

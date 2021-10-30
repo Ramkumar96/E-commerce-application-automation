@@ -19,7 +19,6 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -274,17 +273,17 @@ public class TestUtility extends TestBase
 	}
 
 	//To Match Value with List of Elements and Click on it.
-	public void clickOnMatchingValue(List<WebElement> listOfElements, String valueToBeMatched) 
-	{
-		for(WebElement element : listOfElements) 
-		{
-			if(element.getText().equalsIgnoreCase(valueToBeMatched)) 
-			{
-				element.click();
-				return;
-			}
-		}
-	}
+//	public void clickOnMatchingValue(List<WebElement> listOfElements, String valueToBeMatched)
+//	{
+//		for(WebElement element : listOfElements)
+//		{
+//			if(element.getText().equalsIgnoreCase(valueToBeMatched))
+//			{
+//				element.click();
+//				return;
+//			}
+//		}
+//	}
 
 	//To Click on Element using Actions Class.
 	public void clickOnElementUsingActions(WebElement element) 
@@ -301,32 +300,32 @@ public class TestUtility extends TestBase
 	}
 
 	//To Perform Drag and Drop action using Actions Class - 1.
-	public static void dragAndDrop_1(WebDriver driver, WebElement sourceElement, WebElement destinationElement) 
-	{
-		actions = new Actions(driver);
-		actions.dragAndDrop(sourceElement, destinationElement).pause(Duration.ofSeconds(2)).release().build().perform();
-	}
+//	public static void dragAndDrop_1(WebDriver driver, WebElement sourceElement, WebElement destinationElement)
+//	{
+//		actions = new Actions(driver);
+//		actions.dragAndDrop(sourceElement, destinationElement).pause(Duration.ofSeconds(2)).release().build().perform();
+//	}
 
 	//To Perform Drag and Drop action using Actions Class - 2.
-	public static void dragAndDrop_2(WebDriver driver, WebElement sourceElement, WebElement destinationElement) 
-	{
-		actions = new Actions(driver);
-		actions.clickAndHold(sourceElement).pause(Duration.ofSeconds(2)).moveToElement(destinationElement).pause(Duration.ofSeconds(2)).release().build().perform();
-	}
+//	public static void dragAndDrop_2(WebDriver driver, WebElement sourceElement, WebElement destinationElement)
+//	{
+//		actions = new Actions(driver);
+//		actions.clickAndHold(sourceElement).pause(Duration.ofSeconds(2)).moveToElement(destinationElement).pause(Duration.ofSeconds(2)).release().build().perform();
+//	}
 
 	//To Perform Right Click action using Actions Class.
-	public static void rightClick(WebDriver driver, WebElement element) 
-	{
-		actions = new Actions(driver);
-		actions.contextClick(element).build().perform();
-	}
+//	public static void rightClick(WebDriver driver, WebElement element)
+//	{
+//		actions = new Actions(driver);
+//		actions.contextClick(element).build().perform();
+//	}
 
 	//To perform Double Click action using Actions Class.
-	public static void doubleClick(WebDriver driver, WebElement element) 
-	{
-		actions = new Actions(driver);
-		actions.doubleClick(element).build().perform();
-	}
+//	public static void doubleClick(WebDriver driver, WebElement element)
+//	{
+//		actions = new Actions(driver);
+//		actions.doubleClick(element).build().perform();
+//	}
 
 	//Extent Report - 1.
 	public static String getSystemDate() 

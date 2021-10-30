@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
@@ -15,6 +16,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Collections;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 public class TestBase
 {
@@ -76,12 +78,12 @@ public class TestBase
 
 	}
 
-
-//	@AfterMethod(alwaysRun=true)
-//	public void tearDown() throws IOException
-//	{
-//		driver.quit();
-//		Log.info("Browser Terminated");
-//		Log.info("-----------------------------------------------");
-//	}
+	@AfterMethod(alwaysRun=true)
+	public void tearDown() throws IOException
+	{
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.quit();
+		Log.info("Browser Terminated");
+		Log.info("-----------------------------------------------");
+	}
 }

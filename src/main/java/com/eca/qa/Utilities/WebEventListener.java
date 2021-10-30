@@ -8,14 +8,15 @@ import org.openqa.selenium.support.events.WebDriverEventListener;
 
 import com.eca.qa.BaseClass.TestBase;
 
-public class WebEventListener extends TestBase implements WebDriverEventListener 
+public class WebEventListener extends TestBase implements WebDriverEventListener
 {
-	public void beforeNavigateTo(String url, WebDriver driver) 
+	@Override
+	public void beforeNavigateTo(String url, WebDriver driver)
 	{
 		System.out.println("Before navigating to: '" + url + "'");
 	}
 
-	public void afterNavigateTo(String url, WebDriver driver) 
+	public void afterNavigateTo(String url, WebDriver driver)
 	{
 		System.out.println("Navigated to:'" + url + "'");
 	}
@@ -35,73 +36,73 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 		System.out.println("Trying to Click On: " + element.toString());
 	}
 
-	public void afterClickOn(WebElement element, WebDriver driver) 
+	public void afterClickOn(WebElement element, WebDriver driver)
 	{
 		System.out.println("Clicked On: " + element.toString());
 	}
 
-	public void beforeNavigateBack(WebDriver driver) 
+	public void beforeNavigateBack(WebDriver driver)
 	{
 		System.out.println("Navigating Back to Previous Page");
 	}
 
-	public void afterNavigateBack(WebDriver driver) 
+	public void afterNavigateBack(WebDriver driver)
 	{
 		System.out.println("Navigated Back to Previous Page");
 	}
 
-	public void beforeNavigateForward(WebDriver driver) 
+	public void beforeNavigateForward(WebDriver driver)
 	{
 		System.out.println("Navigating Forward to Next Page");
 	}
 
-	public void afterNavigateForward(WebDriver driver) 
+	public void afterNavigateForward(WebDriver driver)
 	{
 		System.out.println("Navigated Forward to Next Page");
 	}
 
-	public void onException(Throwable error, WebDriver driver) 
+	public void onException(Throwable error, WebDriver driver)
 	{
 		/*System.out.println("Exception Occured: " +error);
-		try 
+		try
 		{
 			//Captures Screenshot When Exception Found and Stores in Screenshots Folder.
 			//No Need to take Screenshot again and again.
 			TestUtility.takeScreenshotAtEndOfTest();
-		} 
-		catch (IOException e) 
+		}
+		catch (IOException e)
 		{
 			e.printStackTrace();
 		}*/
 	}
 
-	public void beforeFindBy(By by, WebElement element, WebDriver driver) 
+	public void beforeFindBy(By by, WebElement element, WebDriver driver)
 	{
 		System.out.println("Trying to Find Element By : " + by.toString());
 	}
 
-	public void afterFindBy(By by, WebElement element, WebDriver driver) 
+	public void afterFindBy(By by, WebElement element, WebDriver driver)
 	{
 		System.out.println("Found Element By : " + by.toString());
 	}
 
-	//Non Overridden Methods of WebListener Class 
-	public void beforeScript(String script, WebDriver driver) 
+	//Non Overridden Methods of WebListener Class
+	public void beforeScript(String script, WebDriver driver)
 	{
-		
+
 	}
 
 	public void afterScript(String script, WebDriver driver)
 	{
-		
+
 	}
 
-	public void beforeAlertAccept(WebDriver driver) 
+	public void beforeAlertAccept(WebDriver driver)
 	{
 
 	}
 
-	public void afterAlertAccept(WebDriver driver) 
+	public void afterAlertAccept(WebDriver driver)
 	{
 
 	}
@@ -111,7 +112,7 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 
 	}
 
-	public void beforeAlertDismiss(WebDriver driver) 
+	public void beforeAlertDismiss(WebDriver driver)
 	{
 
 	}
@@ -121,17 +122,17 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 
 	}
 
-	public void afterNavigateRefresh(WebDriver driver) 
+	public void afterNavigateRefresh(WebDriver driver)
 	{
 
 	}
 
-	public void beforeChangeValueOf(WebElement element, WebDriver driver, CharSequence[] keysToSend) 
+	public void beforeChangeValueOf(WebElement element, WebDriver driver, CharSequence[] keysToSend)
 	{
 
 	}
 
-	public void afterChangeValueOf(WebElement element, WebDriver driver, CharSequence[] keysToSend) 
+	public void afterChangeValueOf(WebElement element, WebDriver driver, CharSequence[] keysToSend)
 	{
 
 	}
@@ -151,9 +152,9 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 
 	}
 
-	public <X> void beforeGetScreenshotAs(OutputType<X> arg0) 
+	public <X> void beforeGetScreenshotAs(OutputType<X> arg0)
 	{
-		
+
 	}
 
 	public void beforeGetText(WebElement arg0, WebDriver arg1)
