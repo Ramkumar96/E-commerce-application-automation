@@ -1,0 +1,9 @@
+2021-10-31 18:11:55,284  INFO [main] WebEventListener:23 - -----------------------------------------------
+2021-10-31 18:11:55,289  INFO [main] WebEventListener:24 - E-Commerce Application Launched Successfully
+2021-10-31 18:12:00,641  INFO [main] LoginPage:36 - Sign In button Clicked
+2021-10-31 18:12:01,192  INFO [main] LoginPage:40 - User Name filled
+2021-10-31 18:12:01,491  INFO [main] LoginPage:42 - Password filled
+2021-10-31 18:12:03,753  INFO [main] LoginPage:46 - Submit Button Clicked
+2021-10-31 18:12:03,757  INFO [main] HomePage:32 - Successfully Logged into E-Commerce Application
+2021-10-31 18:12:04,526  INFO [main] HomePage:86 - Browser Terminated
+2021-10-31 18:12:04,526  INFO [main] HomePage:87 - -----------------------------------------------

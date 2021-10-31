@@ -30,7 +30,7 @@ public class LoginPage extends TestBase
 	}
 
 	
-	public HomePage login(String uname, String pword)
+	public HomePage login(String uname,String pword)
 	{
 		signInButton.click();
 		Log.info("Sign In button Clicked");
